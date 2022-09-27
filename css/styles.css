@@ -1,0 +1,277 @@
+:root {
+    --main-color-text: #212121;
+    --second-color-text: #757575;
+    --main-nav-color:#2196F3;
+    --white-color-text:#FFFFFF;
+    --blue-color:#2196F3;
+    --second-background-color:#2F303A;
+}
+
+body {
+    background-color: E5E5E5;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+.list{
+    list-style: none;
+}
+
+.link {
+    text-decoration: none ;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+/* Колір фону у навігації #ECECEC*/
+/* колір фону  у шапці #2F303A*/
+/*   Основна частина фону 1 #E5E5E5 */
+/*  Основна частина фону 2 #F5F4FA */
+/*  Основний колір таксту  #212121 */
+/* Другий за важливістю колір #757575 */
+/* Колір на логотипі, пошті, при наведенні(акцент) #2196F3  */
+/* Білий колір на назвах #FFFFFF*/
+/* Білий колір на емейлі  та телефоні в футері rgba(255, 255, 255, 0.6); */
+/* Колір кнопки #2196F3 */
+/* Колір у футері #F5F4FA */
+.logo, .logo-1 {
+    color: var(--blue-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Navigation */
+
+.nav-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color-text)
+}
+.nav-list .link.current {
+    color: var(--main-nav-color)
+}
+
+.nav-list-on .link.current {
+    color: var(--main-nav-color)
+}
+.nav-item:hover, .nav-item:focus {
+    color: var(--main-nav-color);
+}
+.nav-on-item{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-color-text);
+}
+.nav-on-item:hover, .nav-on-item:focus { 
+    color: var(--main-nav-color);
+    
+}
+
+/* Main part*/
+
+.main {
+    background: var(--second-background-color);
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color-text);
+    padding-bottom: 30px;
+}
+.about-btn {
+    color: var(--white-color-text);
+    background-color: var(--main-nav-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+}
+.about-btn:hover, .about-btn:focus {
+    background-color: #188CE8;
+}
+/* Features */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color-text);
+}
+
+.features {
+    padding-top: 94px;
+    padding-left: 94px;
+}
+
+.features-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--second-color-text);
+}
+/* Hero */
+
+.hero {
+    padding-top: 100px;
+    padding-bottom: 94px;
+}
+
+.hero-title {
+    padding-bottom: 50px;
+}
+
+.hero-title, .profile-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--main-color-text);
+}
+/* Profile */
+
+.profile {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.profile-title {
+    padding-bottom: 50px;
+}
+.image-profile {
+    padding-bottom: 30px;
+}
+
+.profile-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--main-color-text);
+    padding-bottom: 10px;
+}
+
+.profile-text {
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--second-color-text);
+}
+
+/* Footer */
+
+.footer {
+    background: var(--second-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-1 {
+    padding-bottom: 9px;
+}
+
+.address {
+    font-style: normal;
+}
+.address-link{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--white-color-text);
+    padding-bottom: 27px;
+}
+
+.footer-link {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 2px;
+}
+
+/* Portfolio */
+.portfolio-btn, .portfolio-butn {
+    cursor: pointer;
+}
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--white-color-text);
+    background: var(--blue-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.portfolio-list .link.current {
+    color: var(--main-nav-color);
+}
+.portfolio-butn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+.portfolio-butn:hover, .portfolio-butn:focus { 
+        color: var(--white-color-text);
+        background-color: var(--main-nav-color);
+    }
+
+.image-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color-text);
+}
+.image-text {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--second-color-text);
+}
+
+
+
+
