@@ -13,6 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
+
 .list{
     list-style: none;
 }
@@ -20,29 +21,30 @@ body {
 .link {
     text-decoration: none ;
 }
+
 .container {
+    margin-left: auto;
+    margin-right: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    outline: 2px solid tomato;
 }
 
-.header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
-/* Колір фону у навігації #ECECEC*/
-/* колір фону  у шапці #2F303A*/
-/*   Основна частина фону 1 #E5E5E5 */
-/*  Основна частина фону 2 #F5F4FA */
-/*  Основний колір таксту  #212121 */
-/* Другий за важливістю колір #757575 */
-/* Колір на логотипі, пошті, при наведенні(акцент) #2196F3  */
-/* Білий колір на назвах #FFFFFF*/
-/* Білий колір на емейлі  та телефоні в футері rgba(255, 255, 255, 0.6); */
-/* Колір кнопки #2196F3 */
-/* Колір у футері #F5F4FA */
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    margin-right: 93px;
+}
+
 .logo, .logo-1 {
     color: var(--blue-color);
     font-family: 'Raleway', sans-serif;
@@ -51,7 +53,12 @@ body {
     line-height: 1.14;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 /* Navigation */
+
+.nav-list {
+    display: flex;
+}
 
 .nav-item{
     font-weight: 500;
@@ -60,8 +67,36 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-color-text)
 }
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-connect {
+    margin-left: auto;
+}
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
 .nav-list .link.current {
     color: var(--main-nav-color)
+}
+
+.nav-list-on {
+    display: flex;
+    gap: 50px;
 }
 
 .nav-list-on .link.current {
@@ -84,13 +119,15 @@ body {
 
 /* Main part*/
 
-.main {
+.main-cont {
     background: var(--second-background-color);
     padding-top: 120px;
     padding-bottom: 200px;
 }
 
 .main-title {
+    margin-top: 0;
+    margin-bottom: 30;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -98,7 +135,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color-text);
-    padding-bottom: 30px;
 }
 .about-btn {
     color: var(--white-color-text);
@@ -113,11 +149,18 @@ body {
     border-radius: 4px;
     margin: 0 auto;
     display: block;
+    width: 200px;
+    height: 50px;
 }
 .about-btn:hover, .about-btn:focus {
     background-color: #188CE8;
 }
 /* Features */
+
+.features {
+    padding-top: 94px;
+    padding-left: 94px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -132,6 +175,8 @@ body {
     overflow: hidden;
 }
 .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -139,13 +184,25 @@ body {
     text-transform: uppercase;
     color: var(--main-color-text);
 }
+.features-list {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
-.features {
-    padding-top: 94px;
-    padding-left: 94px;
+.item {
+    width: calc((100%-90px)/4);
+}
+
+.feature-list .item {
+    width: 300px;
 }
 
 .features-text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -159,7 +216,24 @@ body {
 }
 
 .hero-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.hero-list {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-item {
+    width: calc((100% - 60px)/3);
 }
 
 .hero-title, .profile-title {
@@ -173,14 +247,43 @@ body {
 .profile {
     padding-top: 94px;
     padding-bottom: 94px;
+    background: #F5F4FA;
 }
 
+
 .profile-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
 }
+
+.profile-list {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    
+}
+
 .image-profile {
     padding-bottom: 30px;
+    width: calc((100% - 90px) / 4);
+    width: 270px;
+    height: 368px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
+
+
+/* .border-profile{
+    
+} */
 
 .profile-name {
     font-weight: 500;
@@ -204,7 +307,7 @@ body {
     padding-bottom: 60px;
 }
 .logo-1 {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .address {
@@ -215,17 +318,29 @@ body {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--white-color-text);
-    padding-bottom: 27px;
+    margin-bottom: 27px;
 }
 
 .footer-link {
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
-    padding-bottom: 2px;
+    margin-bottom: 2px;
 }
 
 /* Portfolio */
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-list {
+    display: flex;
+    justify-content:center;
+    gap: 8px;
+}
+
 .portfolio-btn, .portfolio-butn {
     cursor: pointer;
 }
@@ -240,7 +355,15 @@ body {
     background: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    margin-bottom: 34px;
+    padding: 6px 27px;
 }
+
+.portfolio-list {
+    padding: 0;
+    margin: 0;
+}
+
 .portfolio-list .link.current {
     color: var(--main-nav-color);
 }
@@ -252,11 +375,30 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
+    padding: 6px 27px;
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 .portfolio-butn:hover, .portfolio-butn:focus { 
-        color: var(--white-color-text);
-        background-color: var(--main-nav-color);
+    color: var(--white-color-text);
+    background-color: var(--main-nav-color);
     }
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.image-items-list {
+    width: calc((100% - 60px) / 3);
+    width: 370px;
+    height: 400px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
 
 .image-name {
     font-weight: 700;
