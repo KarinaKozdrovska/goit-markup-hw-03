@@ -377,6 +377,7 @@ padding-bottom: 0;
     padding: 6px 27px;
     background: #F5F4FA;
     border-radius: 4px;
+    border: none;
 }
 .portfolio-butn:hover, .portfolio-butn:focus { 
     color: var(--white-color-text);
