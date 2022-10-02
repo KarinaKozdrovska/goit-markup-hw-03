@@ -308,7 +308,7 @@ padding-bottom: 0;
     padding: 60px 0;
 }
 .logo-1 {
-    display: block;
+    display: flex;
     margin-bottom: 20px;
 }
 
