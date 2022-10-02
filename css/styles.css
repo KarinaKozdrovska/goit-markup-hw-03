@@ -126,6 +126,7 @@ border-bottom: 1px solid #ececec;
 
 /* Main part*/
 
+
 .main-cont {
     background: var(--second-background-color);
     padding: 200px 0;
@@ -161,6 +162,7 @@ border-bottom: 1px solid #ececec;
 .about-btn:hover, .about-btn:focus {
     background-color: #188CE8;
 }
+
 /* Features */
 
 .features {
