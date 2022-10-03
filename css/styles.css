@@ -61,10 +61,6 @@ body {
 
 /* Navigation */
 
-.nav-list {
-    display: flex;
-}
-
 .nav-item {
     display: block;
     padding: 32px 0;
@@ -93,6 +89,7 @@ border-bottom: 1px solid #ececec;
     margin-left: auto;
 }
 .nav-list {
+    margin: 0;
     display: flex;
     gap: 50px;
 }
@@ -113,6 +110,7 @@ border-bottom: 1px solid #ececec;
     color: var(--main-nav-color);
 }
 .nav-on-item{
+    padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -275,7 +273,6 @@ padding-bottom: 0;
 .image-profile {
     width: calc((100% - 90px) / 4);
     width: 270px;
-    height: 368px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -297,7 +294,7 @@ padding-bottom: 0;
 }
 
 .profile-text {
-    margin-top: 0;
+    margin: 0;
     font-size: 16px;
     line-height: 1.2;
     color: var(--second-color-text);
@@ -337,6 +334,9 @@ padding-bottom: 0;
 /* Portfolio */
 
 .portfolio-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
     display: flex;
     justify-content:center;
     gap: 8px;
@@ -358,11 +358,6 @@ padding-bottom: 0;
     border-radius: 4px;
     padding: 6px 27px;
     border: none;
-}
-
-.portfolio-list {
-    padding: 0;
-    margin-bottom: 50px;
 }
 
 .portfolio-list .link.current {
@@ -395,7 +390,6 @@ padding-bottom: 0;
 }
 
 .image-items-list {
-    margin-bottom: 20px;
     width: calc((100% - 60px) / 3);
     width: 370px;
     height: 404px;
